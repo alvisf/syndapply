@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="../static/style.css" />
+  <!-- <link rel="stylesheet" href="styles.css" /> -->
+  <!-- <script src="drop.js"></script> -->
+  <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script> -->
+  <link rel="stylesheet" href="../static/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        $(".modal").css("display", "block");
+      });
+      $(".close").click(function () {
+        $(".modal").css("display", "none");
+      });
+      $(".accept").click(function () {
+        $(".modal").css("display", "none");
+        $(".status").replaceWith("ACCEPTED").css("color", "green")
+      });
+      $(".reject").click(function () {
+        $(".modal").css("display", "none");
+        $(".status").css("color", "RED").replaceWith("REJECTED")
+      });
+    });
+  </script>
+  <title>Syndicate Bank</title>
+</head>
+<header>
+
+</header>
+
+<body>
+  <ul>
+    <div class="head">
+      <!-- <img src="logo.png" /> -->
+      <h1>SYND WHATSAPP MESSAGER</h1>
+    </div>
+
+    <li><a href="index.html">MESSENGER</a></li>
+    <li><a href="second.html">LOAN APPLICATION</a></li>
+    <li><a href="third.html"> &emsp;&emsp; STATS &emsp;&emsp; </a></li>
+    <li><a href="fourth.html">LIVE CHAT</a></li>
+    <li><a href="fifth.html">TRIGGER</a></li>
+  </ul>
+  <div class="appli">
+    <span class="span">Loan applications</span>
+    <div class="t-center"><button class="bttn">1:- name: augustin dennis date applied : 28/9/2019 status: <span
+          class="status">Pending
+        </span></button></div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+
+        <p class="t-center">LOAN APPLICATION</p>
+
+        <table class="tg">
+          <tr>
+            <td class="tg-62me" id="lname" colspan="2">NAME:</td>
+            <td class="tg-62me" colspan="2" rowspan="3"><img src="../static/logo.png" class="photo"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax" id="dob" colspan="2">Date Of Birth:</td>
+          </tr>
+          <tr>
+            <td class="tg-62me" id="phNo" colspan="2">Phone No:</td>
+          </tr>
+          <tr>
+            <td class="tg-62me" id="address" colspan="4">ADDRESS:</td>
+          </tr>
+          <tr>
+            <td class="tg-62me" colspan="2"id="loantype" >LOAN TYPE</td>
+            <td class="tg-62me" colspan="2"id="Aincome" >ANNUAL INCOME</td>
+        
+          </tr>
+        </table>
+        <div class="loanb">
+          <button class="accept">ACCEPT</button>
+          <button class="reject"> REJECT</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
+        <script src="alvis1999.js"></script>
+</body>
+
+</html>

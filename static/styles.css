@@ -1,0 +1,97 @@
+.multiselect {
+    width: 200px;
+    float: left;
+    /* background: white; */
+    /* border-radius: 10px; */
+
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+    padding: 6px;
+    /* border-radius: 10px; */
+    /* background: white; */
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+}
+
+#types {
+    display: none;
+    border: none;
+}
+
+#types label {
+    display: block;
+
+}
+
+#types label:hover {
+    background-color: #1e90ff;
+}
+
+#types2 {
+    display: none;
+    /* border: 1px #f70101 solid; */
+}
+
+#types2 label {
+    display: block;
+}
+
+#types2 label:hover {
+    background-color: #1e90ff;
+}
+
+#types3 {
+    display: none;
+    border: none;
+}
+
+#types3 label {
+    display: block;
+}
+
+#types3 label:hover {
+    background-color: #1e90ff;
+}
+
+#types4 {
+    display: none;
+    border: none;
+}
+
+#types4 label {
+    display: block;
+}
+
+#types4 label:hover {
+    background-color: #1e90ff;
+}
+
+
+
+option {
+    text-decoration: none;
+}
+
+
+
+/*
+*
+*
+*
+*
+*
+*/
