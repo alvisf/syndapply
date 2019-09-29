@@ -5,6 +5,9 @@
 // var keyVal = null;
 // var lastNo = lastNum();
 // var xhttp = new XMLHttpRequest();
+
+
+
 var firebaseConfig = {
     apiKey: "AIzaSyB_JG_uUIg53_pZibwczE83fMRiApaYT_k",
     authDomain: "jokes-lpsfyh.firebaseapp.com",
@@ -227,3 +230,36 @@ function stackTop() {
 //   var random = Math.floor(Math.random() * (+max - +min)) + +min;
 //   return random;
 // }
+
+
+const button = document.getElementById('post-btn1');
+
+button.addEventListener('click', async _ => {
+  try {     
+    const response = await fetch('https://whatsappbot1999.herokuapp.com/appstat', {
+      method: 'post',
+      body: {
+        "status":"accept"
+      }
+    });
+    console.log('Completed!', response);
+  } catch(err) {
+    console.error(`Error: ${err}`);
+  }
+});
+
+const button12 = document.getElementById('post-btn2');
+
+button12.addEventListener('click', async _ => {
+  try {     
+    const response = await fetch('https://whatsappbot1999.herokuapp.com/appstat', {
+      method: 'post',
+      body: {
+        "status":"reject"
+      }
+    });
+    console.log('Completed!', response);
+  } catch(err) {
+    console.error(`Error: ${err}`);
+  }
+});
